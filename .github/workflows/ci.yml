@@ -1,0 +1,25 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  rust:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Build examples
+        run: cd examples/rust_depth_bench && cargo build --release
+      - name: Run benchmark (short)
+        run: cd examples/rust_depth_bench && cargo bench --no-run
+
+  cpp:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure
+        run: cmake -B build -DCMAKE_BUILD_TYPE=Release
+      - name: Build
+        run: cmake --build build -j$(sysctl -n hw.ncpu)
+      - name: Run
+        run: ./build/hft_matcher
