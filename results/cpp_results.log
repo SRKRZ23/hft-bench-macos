@@ -1,0 +1,4 @@
+[ExchangeCore] CPU pinning unavailable for core 2, continuing without affinity
+[ExchangeCore] Matching engine online – 5 symbols
+[ExchangeCore] 100000 orders in 4.19075 ms  (23862077 orders/sec)
+[ExchangeCore] 49416 trades executed

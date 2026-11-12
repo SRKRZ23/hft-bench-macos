@@ -1,0 +1,121 @@
+    Finished `bench` profile [optimized] target(s) in 0.14s
+     Running benches/event.rs (target/release/deps/event-110b83d6a70b8b94)
+Gnuplot not found, using plotters backend
+Benchmarking pod ring   8B (8B)
+Benchmarking pod ring   8B (8B): Warming up for 3.0000 s
+Benchmarking pod ring   8B (8B): Collecting 100 samples in estimated 5.0000 s (2.1B iterations)
+Benchmarking pod ring   8B (8B): Analyzing
+pod ring   8B (8B)      time:   [2.4184 ns 2.4255 ns 2.4358 ns]
+Found 5 outliers among 100 measurements (5.00%)
+  3 (3.00%) high mild
+  2 (2.00%) high severe
+
+Benchmarking event ring 8B (8B) 1 field
+Benchmarking event ring 8B (8B) 1 field: Warming up for 3.0000 s
+Benchmarking event ring 8B (8B) 1 field: Collecting 100 samples in estimated 5.0000 s (2.3B iterations)
+Benchmarking event ring 8B (8B) 1 field: Analyzing
+event ring 8B (8B) 1 field
+                        time:   [2.1632 ns 2.1817 ns 2.2069 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+
+Benchmarking event ring 8B (8B) full write
+Benchmarking event ring 8B (8B) full write: Warming up for 3.0000 s
+Benchmarking event ring 8B (8B) full write: Collecting 100 samples in estimated 5.0000 s (2.3B iterations)
+Benchmarking event ring 8B (8B) full write: Analyzing
+event ring 8B (8B) full write
+                        time:   [2.1339 ns 2.1467 ns 2.1607 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  8 (8.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking pod ring   64B (64B)
+Benchmarking pod ring   64B (64B): Warming up for 3.0000 s
+Benchmarking pod ring   64B (64B): Collecting 100 samples in estimated 5.0000 s (1.2B iterations)
+Benchmarking pod ring   64B (64B): Analyzing
+pod ring   64B (64B)    time:   [4.1251 ns 4.1704 ns 4.2389 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  1 (1.00%) low mild
+  5 (5.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking event ring 64B (64B) 1 field
+Benchmarking event ring 64B (64B) 1 field: Warming up for 3.0000 s
+Benchmarking event ring 64B (64B) 1 field: Collecting 100 samples in estimated 5.0000 s (2.3B iterations)
+Benchmarking event ring 64B (64B) 1 field: Analyzing
+event ring 64B (64B) 1 field
+                        time:   [2.1696 ns 2.2093 ns 2.2628 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking event ring 64B (64B) full write
+Benchmarking event ring 64B (64B) full write: Warming up for 3.0000 s
+Benchmarking event ring 64B (64B) full write: Collecting 100 samples in estimated 5.0000 s (1.1B iterations)
+Benchmarking event ring 64B (64B) full write: Analyzing
+event ring 64B (64B) full write
+                        time:   [4.6069 ns 4.6663 ns 4.7591 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  5 (5.00%) high mild
+  2 (2.00%) high severe
+
+Benchmarking pod ring   1K (1024B)
+Benchmarking pod ring   1K (1024B): Warming up for 3.0000 s
+Benchmarking pod ring   1K (1024B): Collecting 100 samples in estimated 5.0002 s (58M iterations)
+Benchmarking pod ring   1K (1024B): Analyzing
+pod ring   1K (1024B)   time:   [85.839 ns 87.218 ns 88.744 ns]
+Found 4 outliers among 100 measurements (4.00%)
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking event ring 1K (1024B) 1 field
+Benchmarking event ring 1K (1024B) 1 field: Warming up for 3.0000 s
+Benchmarking event ring 1K (1024B) 1 field: Collecting 100 samples in estimated 5.0000 s (1.8B iterations)
+Benchmarking event ring 1K (1024B) 1 field: Analyzing
+event ring 1K (1024B) 1 field
+                        time:   [2.7304 ns 2.7730 ns 2.8233 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) high mild
+  5 (5.00%) high severe
+
+Benchmarking event ring 1K (1024B) full write
+Benchmarking event ring 1K (1024B) full write: Warming up for 3.0000 s
+Benchmarking event ring 1K (1024B) full write: Collecting 100 samples in estimated 5.0000 s (106M iterations)
+Benchmarking event ring 1K (1024B) full write: Analyzing
+event ring 1K (1024B) full write
+                        time:   [46.872 ns 47.118 ns 47.394 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  2 (2.00%) low mild
+  2 (2.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking pod ring   4K (4096B)
+Benchmarking pod ring   4K (4096B): Warming up for 3.0000 s
+Benchmarking pod ring   4K (4096B): Collecting 100 samples in estimated 5.0010 s (13M iterations)
+Benchmarking pod ring   4K (4096B): Analyzing
+pod ring   4K (4096B)   time:   [374.99 ns 378.28 ns 381.48 ns]
+Found 8 outliers among 100 measurements (8.00%)
+  3 (3.00%) high mild
+  5 (5.00%) high severe
+
+Benchmarking event ring 4K (4096B) 1 field
+Benchmarking event ring 4K (4096B) 1 field: Warming up for 3.0000 s
+Benchmarking event ring 4K (4096B) 1 field: Collecting 100 samples in estimated 5.0000 s (1.7B iterations)
+Benchmarking event ring 4K (4096B) 1 field: Analyzing
+event ring 4K (4096B) 1 field
+                        time:   [2.8850 ns 2.9620 ns 3.0567 ns]
+Found 12 outliers among 100 measurements (12.00%)
+  9 (9.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking event ring 4K (4096B) full write
+Benchmarking event ring 4K (4096B) full write: Warming up for 3.0000 s
+Benchmarking event ring 4K (4096B) full write: Collecting 100 samples in estimated 5.0010 s (24M iterations)
+Benchmarking event ring 4K (4096B) full write: Analyzing
+event ring 4K (4096B) full write
+                        time:   [201.90 ns 203.55 ns 205.80 ns]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+

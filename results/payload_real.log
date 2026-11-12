@@ -1,0 +1,177 @@
+    Finished `bench` profile [optimized] target(s) in 0.05s
+     Running benches/payload_scaling.rs (target/release/deps/payload_scaling-0f491d1736659e68)
+Gnuplot not found, using plotters backend
+Benchmarking payload_scaling/8B roundtrip
+Benchmarking payload_scaling/8B roundtrip: Warming up for 3.0000 s
+Benchmarking payload_scaling/8B roundtrip: Collecting 100 samples in estimated 5.0000 s (1.7B iterations)
+Benchmarking payload_scaling/8B roundtrip: Analyzing
+payload_scaling/8B roundtrip
+                        time:   [2.9279 ns 2.9459 ns 2.9639 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  4 (4.00%) low mild
+  3 (3.00%) high mild
+Benchmarking payload_scaling/16B roundtrip
+Benchmarking payload_scaling/16B roundtrip: Warming up for 3.0000 s
+Benchmarking payload_scaling/16B roundtrip: Collecting 100 samples in estimated 5.0000 s (1.4B iterations)
+Benchmarking payload_scaling/16B roundtrip: Analyzing
+payload_scaling/16B roundtrip
+                        time:   [3.4660 ns 3.4754 ns 3.4878 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) low mild
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+Benchmarking payload_scaling/32B roundtrip
+Benchmarking payload_scaling/32B roundtrip: Warming up for 3.0000 s
+Benchmarking payload_scaling/32B roundtrip: Collecting 100 samples in estimated 5.0000 s (1.0B iterations)
+Benchmarking payload_scaling/32B roundtrip: Analyzing
+payload_scaling/32B roundtrip
+                        time:   [4.8588 ns 4.8777 ns 4.9013 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  1 (1.00%) low severe
+  5 (5.00%) low mild
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+Benchmarking payload_scaling/64B roundtrip
+Benchmarking payload_scaling/64B roundtrip: Warming up for 3.0000 s
+Benchmarking payload_scaling/64B roundtrip: Collecting 100 samples in estimated 5.0000 s (774M iterations)
+Benchmarking payload_scaling/64B roundtrip: Analyzing
+payload_scaling/64B roundtrip
+                        time:   [6.4307 ns 6.4626 ns 6.5143 ns]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) low mild
+  2 (2.00%) high severe
+Benchmarking payload_scaling/128B roundtrip
+Benchmarking payload_scaling/128B roundtrip: Warming up for 3.0000 s
+Benchmarking payload_scaling/128B roundtrip: Collecting 100 samples in estimated 5.0000 s (673M iterations)
+Benchmarking payload_scaling/128B roundtrip: Analyzing
+payload_scaling/128B roundtrip
+                        time:   [7.3681 ns 7.4063 ns 7.4572 ns]
+Found 5 outliers among 100 measurements (5.00%)
+  4 (4.00%) high mild
+  1 (1.00%) high severe
+Benchmarking payload_scaling/256B roundtrip
+Benchmarking payload_scaling/256B roundtrip: Warming up for 3.0000 s
+Benchmarking payload_scaling/256B roundtrip: Collecting 100 samples in estimated 5.0000 s (305M iterations)
+Benchmarking payload_scaling/256B roundtrip: Analyzing
+payload_scaling/256B roundtrip
+                        time:   [16.220 ns 16.318 ns 16.431 ns]
+Benchmarking payload_scaling/512B roundtrip
+Benchmarking payload_scaling/512B roundtrip: Warming up for 3.0000 s
+Benchmarking payload_scaling/512B roundtrip: Collecting 100 samples in estimated 5.0001 s (147M iterations)
+Benchmarking payload_scaling/512B roundtrip: Analyzing
+payload_scaling/512B roundtrip
+                        time:   [31.773 ns 31.821 ns 31.887 ns]
+Benchmarking payload_scaling/1024B roundtrip
+Benchmarking payload_scaling/1024B roundtrip: Warming up for 3.0000 s
+Benchmarking payload_scaling/1024B roundtrip: Collecting 100 samples in estimated 5.0004 s (42M iterations)
+Benchmarking payload_scaling/1024B roundtrip: Analyzing
+payload_scaling/1024B roundtrip
+                        time:   [117.96 ns 118.97 ns 119.94 ns]
+Benchmarking payload_scaling/2048B roundtrip
+Benchmarking payload_scaling/2048B roundtrip: Warming up for 3.0000 s
+Benchmarking payload_scaling/2048B roundtrip: Collecting 100 samples in estimated 5.0012 s (20M iterations)
+Benchmarking payload_scaling/2048B roundtrip: Analyzing
+payload_scaling/2048B roundtrip
+                        time:   [248.34 ns 251.18 ns 254.45 ns]
+Found 16 outliers among 100 measurements (16.00%)
+  15 (15.00%) high mild
+  1 (1.00%) high severe
+Benchmarking payload_scaling/4096B roundtrip
+Benchmarking payload_scaling/4096B roundtrip: Warming up for 3.0000 s
+Benchmarking payload_scaling/4096B roundtrip: Collecting 100 samples in estimated 5.0027 s (8.8M iterations)
+Benchmarking payload_scaling/4096B roundtrip: Analyzing
+payload_scaling/4096B roundtrip
+                        time:   [521.86 ns 526.55 ns 531.45 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking payload_scaling_xthread/8B cross-thread
+Benchmarking payload_scaling_xthread/8B cross-thread: Warming up for 3.0000 s
+Benchmarking payload_scaling_xthread/8B cross-thread: Collecting 100 samples in estimated 5.0001 s (64M iterations)
+Benchmarking payload_scaling_xthread/8B cross-thread: Analyzing
+payload_scaling_xthread/8B cross-thread
+                        time:   [76.409 ns 77.138 ns 77.834 ns]
+Found 2 outliers among 100 measurements (2.00%)
+  1 (1.00%) low mild
+  1 (1.00%) high mild
+Benchmarking payload_scaling_xthread/16B cross-thread
+Benchmarking payload_scaling_xthread/16B cross-thread: Warming up for 3.0000 s
+Benchmarking payload_scaling_xthread/16B cross-thread: Collecting 100 samples in estimated 5.0002 s (65M iterations)
+Benchmarking payload_scaling_xthread/16B cross-thread: Analyzing
+payload_scaling_xthread/16B cross-thread
+                        time:   [75.465 ns 75.923 ns 76.455 ns]
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high mild
+Benchmarking payload_scaling_xthread/32B cross-thread
+Benchmarking payload_scaling_xthread/32B cross-thread: Warming up for 3.0000 s
+Benchmarking payload_scaling_xthread/32B cross-thread: Collecting 100 samples in estimated 5.0002 s (65M iterations)
+Benchmarking payload_scaling_xthread/32B cross-thread: Analyzing
+payload_scaling_xthread/32B cross-thread
+                        time:   [76.845 ns 77.319 ns 77.823 ns]
+Found 13 outliers among 100 measurements (13.00%)
+  12 (12.00%) high mild
+  1 (1.00%) high severe
+Benchmarking payload_scaling_xthread/64B cross-thread
+Benchmarking payload_scaling_xthread/64B cross-thread: Warming up for 3.0000 s
+Benchmarking payload_scaling_xthread/64B cross-thread: Collecting 100 samples in estimated 5.0001 s (43M iterations)
+Benchmarking payload_scaling_xthread/64B cross-thread: Analyzing
+payload_scaling_xthread/64B cross-thread
+                        time:   [115.53 ns 120.08 ns 124.58 ns]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+Benchmarking payload_scaling_xthread/128B cross-thread
+Benchmarking payload_scaling_xthread/128B cross-thread: Warming up for 3.0000 s
+Benchmarking payload_scaling_xthread/128B cross-thread: Collecting 100 samples in estimated 5.0002 s (38M iterations)
+Benchmarking payload_scaling_xthread/128B cross-thread: Analyzing
+payload_scaling_xthread/128B cross-thread
+                        time:   [108.82 ns 111.81 ns 115.33 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  3 (3.00%) high mild
+  6 (6.00%) high severe
+Benchmarking payload_scaling_xthread/256B cross-thread
+Benchmarking payload_scaling_xthread/256B cross-thread: Warming up for 3.0000 s
+Benchmarking payload_scaling_xthread/256B cross-thread: Collecting 100 samples in estimated 5.0005 s (37M iterations)
+Benchmarking payload_scaling_xthread/256B cross-thread: Analyzing
+payload_scaling_xthread/256B cross-thread
+                        time:   [134.92 ns 137.17 ns 140.24 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  6 (6.00%) high mild
+  3 (3.00%) high severe
+Benchmarking payload_scaling_xthread/512B cross-thread
+Benchmarking payload_scaling_xthread/512B cross-thread: Warming up for 3.0000 s
+Benchmarking payload_scaling_xthread/512B cross-thread: Collecting 100 samples in estimated 5.0002 s (25M iterations)
+Benchmarking payload_scaling_xthread/512B cross-thread: Analyzing
+payload_scaling_xthread/512B cross-thread
+                        time:   [186.20 ns 187.10 ns 188.06 ns]
+Found 9 outliers among 100 measurements (9.00%)
+  5 (5.00%) high mild
+  4 (4.00%) high severe
+Benchmarking payload_scaling_xthread/1024B cross-thread
+Benchmarking payload_scaling_xthread/1024B cross-thread: Warming up for 3.0000 s
+Benchmarking payload_scaling_xthread/1024B cross-thread: Collecting 100 samples in estimated 5.0004 s (22M iterations)
+Benchmarking payload_scaling_xthread/1024B cross-thread: Analyzing
+payload_scaling_xthread/1024B cross-thread
+                        time:   [222.47 ns 224.98 ns 228.05 ns]
+Found 14 outliers among 100 measurements (14.00%)
+  6 (6.00%) high mild
+  8 (8.00%) high severe
+Benchmarking payload_scaling_xthread/2048B cross-thread
+Benchmarking payload_scaling_xthread/2048B cross-thread: Warming up for 3.0000 s
+Benchmarking payload_scaling_xthread/2048B cross-thread: Collecting 100 samples in estimated 5.0016 s (13M iterations)
+Benchmarking payload_scaling_xthread/2048B cross-thread: Analyzing
+payload_scaling_xthread/2048B cross-thread
+                        time:   [388.64 ns 394.00 ns 399.61 ns]
+Found 7 outliers among 100 measurements (7.00%)
+  4 (4.00%) high mild
+  3 (3.00%) high severe
+Benchmarking payload_scaling_xthread/4096B cross-thread
+Benchmarking payload_scaling_xthread/4096B cross-thread: Warming up for 3.0000 s
+Benchmarking payload_scaling_xthread/4096B cross-thread: Collecting 100 samples in estimated 5.0009 s (7.7M iterations)
+Benchmarking payload_scaling_xthread/4096B cross-thread: Analyzing
+payload_scaling_xthread/4096B cross-thread
+                        time:   [655.07 ns 686.25 ns 718.98 ns]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high severe
+

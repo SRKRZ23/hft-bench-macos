@@ -1,0 +1,171 @@
+    Finished `bench` profile [optimized] target(s) in 0.10s
+     Running benches/throughput.rs (target/release/deps/throughput-4a9e20a386d22c73)
+Gnuplot not found, using plotters backend
+Benchmarking photon: publish only (no consumer)
+Benchmarking photon: publish only (no consumer): Warming up for 3.0000 s
+Benchmarking photon: publish only (no consumer): Collecting 100 samples in estimated 5.0000 s (1.9B iterations)
+Benchmarking photon: publish only (no consumer): Analyzing
+photon: publish only (no consumer)
+                        time:   [2.6938 ns 2.7141 ns 2.7432 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  3 (3.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking photon: publish, live consumer (lossy)
+Benchmarking photon: publish, live consumer (lossy): Warming up for 3.0000 s
+Benchmarking photon: publish, live consumer (lossy): Collecting 100 samples in estimated 5.0001 s (315M iterations)
+Benchmarking photon: publish, live consumer (lossy): Analyzing
+photon: publish, live consumer (lossy)
+                        time:   [16.364 ns 16.487 ns 16.606 ns]
+Found 5 outliers among 100 measurements (5.00%)
+  1 (1.00%) low severe
+  2 (2.00%) low mild
+  2 (2.00%) high severe
+
+Benchmarking photon: publish, live consumer (bounded)
+Benchmarking photon: publish, live consumer (bounded): Warming up for 3.0000 s
+Benchmarking photon: publish, live consumer (bounded): Collecting 100 samples in estimated 5.0000 s (471M iterations)
+Benchmarking photon: publish, live consumer (bounded): Analyzing
+photon: publish, live consumer (bounded)
+                        time:   [10.176 ns 10.289 ns 10.449 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) low mild
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking photon: publish+recv 1 sub
+Benchmarking photon: publish+recv 1 sub: Warming up for 3.0000 s
+Benchmarking photon: publish+recv 1 sub: Collecting 100 samples in estimated 5.0000 s (1.6B iterations)
+Benchmarking photon: publish+recv 1 sub: Analyzing
+photon: publish+recv 1 sub
+                        time:   [3.1881 ns 3.2015 ns 3.2159 ns]
+Found 3 outliers among 100 measurements (3.00%)
+  2 (2.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking photon: fanout 1 subs
+Benchmarking photon: fanout 1 subs: Warming up for 3.0000 s
+Benchmarking photon: fanout 1 subs: Collecting 100 samples in estimated 5.0000 s (1.5B iterations)
+Benchmarking photon: fanout 1 subs: Analyzing
+photon: fanout 1 subs   time:   [3.2474 ns 3.2642 ns 3.2823 ns]
+Found 4 outliers among 100 measurements (4.00%)
+  3 (3.00%) high mild
+  1 (1.00%) high severe
+
+Benchmarking photon: fanout 2 subs
+Benchmarking photon: fanout 2 subs: Warming up for 3.0000 s
+Benchmarking photon: fanout 2 subs: Collecting 100 samples in estimated 5.0000 s (1.2B iterations)
+Benchmarking photon: fanout 2 subs: Analyzing
+photon: fanout 2 subs   time:   [4.1656 ns 4.1896 ns 4.2205 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  2 (2.00%) high mild
+  4 (4.00%) high severe
+
+Benchmarking photon: fanout 5 subs
+Benchmarking photon: fanout 5 subs: Warming up for 3.0000 s
+Benchmarking photon: fanout 5 subs: Collecting 100 samples in estimated 5.0000 s (724M iterations)
+Benchmarking photon: fanout 5 subs: Analyzing
+photon: fanout 5 subs   time:   [6.9180 ns 7.0166 ns 7.1641 ns]
+Found 6 outliers among 100 measurements (6.00%)
+  1 (1.00%) high mild
+  5 (5.00%) high severe
+
+Benchmarking photon: fanout 10 subs
+Benchmarking photon: fanout 10 subs: Warming up for 3.0000 s
+Benchmarking photon: fanout 10 subs: Collecting 100 samples in estimated 5.0000 s (430M iterations)
+Benchmarking photon: fanout 10 subs: Analyzing
+photon: fanout 10 subs  time:   [11.693 ns 11.726 ns 11.757 ns]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high severe
+
+Benchmarking photon: try_recv (empty)
+Benchmarking photon: try_recv (empty): Warming up for 3.0000 s
+Benchmarking photon: try_recv (empty): Collecting 100 samples in estimated 5.0000 s (6.1B iterations)
+Benchmarking photon: try_recv (empty): Analyzing
+photon: try_recv (empty)
+                        time:   [804.71 ps 811.88 ps 823.51 ps]
+Found 12 outliers among 100 measurements (12.00%)
+  7 (7.00%) high mild
+  5 (5.00%) high severe
+
+Benchmarking photon: latest (skip to newest)
+Benchmarking photon: latest (skip to newest): Warming up for 3.0000 s
+Benchmarking photon: latest (skip to newest): Collecting 100 samples in estimated 5.0001 s (189M iterations)
+Benchmarking photon: latest (skip to newest): Analyzing
+photon: latest (skip to newest)
+                        time:   [25.779 ns 26.043 ns 26.374 ns]
+Found 5 outliers among 100 measurements (5.00%)
+  5 (5.00%) high severe
+
+Benchmarking photon: batch 64 + drain
+Benchmarking photon: batch 64 + drain: Warming up for 3.0000 s
+Benchmarking photon: batch 64 + drain: Collecting 100 samples in estimated 5.0010 s (21M iterations)
+Benchmarking photon: batch 64 + drain: Analyzing
+photon: batch 64 + drain
+                        time:   [239.85 ns 242.10 ns 244.80 ns]
+Found 4 outliers among 100 measurements (4.00%)
+  4 (4.00%) high severe
+
+Benchmarking photon: struct roundtrip (24B)
+Benchmarking photon: struct roundtrip (24B): Warming up for 3.0000 s
+Benchmarking photon: struct roundtrip (24B): Collecting 100 samples in estimated 5.0000 s (1.8B iterations)
+Benchmarking photon: struct roundtrip (24B): Analyzing
+photon: struct roundtrip (24B)
+                        time:   [2.7706 ns 2.7780 ns 2.7857 ns]
+Found 3 outliers among 100 measurements (3.00%)
+  1 (1.00%) high mild
+  2 (2.00%) high severe
+
+Benchmarking disruptor: publish only
+Benchmarking disruptor: publish only: Warming up for 3.0000 s
+Benchmarking disruptor: publish only: Collecting 100 samples in estimated 5.0000 s (496M iterations)
+Benchmarking disruptor: publish only: Analyzing
+disruptor: publish only time:   [9.8853 ns 10.049 ns 10.210 ns]
+
+Benchmarking disruptor: publish+recv 1 consumer
+Benchmarking disruptor: publish+recv 1 consumer: Warming up for 3.0000 s
+Benchmarking disruptor: publish+recv 1 consumer: Collecting 100 samples in estimated 5.0005 s (43M iterations)
+Benchmarking disruptor: publish+recv 1 consumer: Analyzing
+disruptor: publish+recv 1 consumer
+                        time:   [113.30 ns 114.61 ns 116.13 ns]
+Found 4 outliers among 100 measurements (4.00%)
+  2 (2.00%) high mild
+  2 (2.00%) high severe
+
+Benchmarking photon: cross-thread latency
+Benchmarking photon: cross-thread latency: Warming up for 3.0000 s
+Benchmarking photon: cross-thread latency: Collecting 100 samples in estimated 5.0003 s (65M iterations)
+Benchmarking photon: cross-thread latency: Analyzing
+photon: cross-thread latency
+                        time:   [76.444 ns 76.834 ns 77.294 ns]
+Found 10 outliers among 100 measurements (10.00%)
+  7 (7.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking photon: mpmc 2pub 1sub latency
+Benchmarking photon: mpmc 2pub 1sub latency: Warming up for 3.0000 s
+Benchmarking photon: mpmc 2pub 1sub latency: Collecting 100 samples in estimated 5.0003 s (58M iterations)
+Benchmarking photon: mpmc 2pub 1sub latency: Analyzing
+photon: mpmc 2pub 1sub latency
+                        time:   [84.589 ns 85.063 ns 85.620 ns]
+Found 4 outliers among 100 measurements (4.00%)
+  1 (1.00%) high mild
+  3 (3.00%) high severe
+
+Benchmarking spmc: 1 pub, 1 sub
+Benchmarking spmc: 1 pub, 1 sub: Warming up for 3.0000 s
+Benchmarking spmc: 1 pub, 1 sub: Collecting 100 samples in estimated 5.0000 s (1.5B iterations)
+Benchmarking spmc: 1 pub, 1 sub: Analyzing
+spmc: 1 pub, 1 sub      time:   [3.2212 ns 3.2351 ns 3.2491 ns]
+Found 1 outliers among 100 measurements (1.00%)
+  1 (1.00%) high mild
+
+Benchmarking mpmc: 1 pub, 1 sub
+Benchmarking mpmc: 1 pub, 1 sub: Warming up for 3.0000 s
+Benchmarking mpmc: 1 pub, 1 sub: Collecting 100 samples in estimated 5.0000 s (525M iterations)
+Benchmarking mpmc: 1 pub, 1 sub: Analyzing
+mpmc: 1 pub, 1 sub      time:   [9.8344 ns 9.9366 ns 10.122 ns]
+Found 11 outliers among 100 measurements (11.00%)
+  6 (6.00%) high mild
+  5 (5.00%) high severe
+
