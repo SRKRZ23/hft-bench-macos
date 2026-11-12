@@ -4,5 +4,8 @@ results/*.txt linguist-documentation
 results/*.md  linguist-documentation
 patches/*.md  linguist-documentation
 
-# Trigger linguist rescan
-
+# Force language detection (examples/ is in linguist vendor list)
+main.rs       linguist-language=Rust
+main.cpp      linguist-language=C++
+examples/**/*.rs   linguist-language=Rust
+examples/**/*.cpp  linguist-language=C++
