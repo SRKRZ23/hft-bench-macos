@@ -3,3 +3,5 @@ results/*.log linguist-documentation
 results/*.txt linguist-documentation
 results/*.md  linguist-documentation
 patches/*.md  linguist-documentation
+
+# Trigger linguist rescan
